@@ -25,7 +25,9 @@ export const Step5 = ({ formData, handleInputChange, handleFeatureToggle }) => {
       />
 
       <div className="space-y-4 mt-8">
-        <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4">
+        {/* [BUG - SPACING] Negative padding causes content to overflow box */}
+        {/* [FIX] Change -p-8 to p-4 or p-6 */}
+        <div className="bg-green-50 border-2 border-green-200 rounded-xl -p-8">
           <h3 className="font-semibold text-gray-900 mb-4">Choose Features</h3>
           {featuresList.map((feature) => (
             <label

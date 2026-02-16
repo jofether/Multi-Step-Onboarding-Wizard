@@ -3,8 +3,10 @@ export const StepIndicator = ({ step, totalSteps, stepTitles }) => {
     <div className="flex justify-between mb-8">
       {Array.from({ length: totalSteps }, (_, i) => i + 1).map((num) => (
         <div key={num} className="flex flex-col items-center flex-1">
+          {/* [BUG - LAYERS] Absolute positioning without parent relative causes misalignment */}
+          {/* [FIX] Remove absolute or wrap parent div with relative */}
           <div
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 absolute ${
               step >= num
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg'
                 : 'bg-gray-200 text-gray-600'

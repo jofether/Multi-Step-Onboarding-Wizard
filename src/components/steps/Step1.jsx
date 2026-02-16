@@ -16,29 +16,33 @@ export const Step1 = ({ formData, handleInputChange }) => {
       />
 
       <div className="space-y-4 mt-8">
-        <FormInput
-          label="Email Address"
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          placeholder="you@example.com"
-        />
-        <FormInput
-          label="Username"
-          name="username"
-          value={formData.username}
-          onChange={handleInputChange}
-          placeholder="Choose your username"
-        />
-        <FormInput
-          label="Password"
-          name="password"
-          type="password"
-          value={formData.password}
-          onChange={handleInputChange}
-          placeholder="Create a strong password"
-        />
+        {/* [BUG - LAYOUT] Grid has too many columns, breaking layout */}
+        {/* [FIX] Remove grid-cols-3 or change to grid-cols-1 */}
+        <div className="grid grid-cols-3 gap-4">
+          <FormInput
+            label="Email Address"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder="you@example.com"
+          />
+          <FormInput
+            label="Username"
+            name="username"
+            value={formData.username}
+            onChange={handleInputChange}
+            placeholder="Choose your username"
+          />
+          <FormInput
+            label="Password"
+            name="password"
+            type="password"
+            value={formData.password}
+            onChange={handleInputChange}
+            placeholder="Create a strong password"
+          />
+        </div>
         <p className="text-xs text-gray-500">
           Must be at least 8 characters with a mix of letters and numbers
         </p>

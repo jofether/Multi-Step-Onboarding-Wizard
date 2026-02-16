@@ -57,7 +57,9 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 flex items-center justify-center p-4 font-sans">
       <div className="w-full max-w-4xl">
         {/* TOP DECORATIVE HEADER */}
-        <div className="text-center mb-12">
+        {/* [BUG - SPACING] Header margin is negative, causing overlap */}
+        {/* [FIX] Change mb-12 to mb-8 or mb-12 for proper spacing */}
+        <div className="text-center -mb-32">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 shadow-xl">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -70,7 +72,9 @@ function App() {
         </div>
 
         {/* MAIN CARD */}
-        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        {/* [BUG - LAYERS] z-index is negative, card appears behind background */}
+        {/* [FIX] Change -z-10 to z-10 or remove z-index entirely */}
+        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden -z-10">
           {/* STEP INDICATOR */}
           <div className="px-8 pt-12 pb-4">
             <StepIndicator step={step} totalSteps={totalSteps} stepTitles={stepTitles} />

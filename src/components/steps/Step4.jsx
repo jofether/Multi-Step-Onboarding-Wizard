@@ -39,10 +39,12 @@ export const Step4 = ({ formData, setFormData }) => {
 
       <div className="grid grid-cols-3 gap-4 mt-8">
         {plans.map((plan) => (
+          // [BUG - LAYOUT] Flex direction reversed breaks visual order
+          // [FIX] Change flex-col-reverse to flex-col or remove it
           <div
             key={plan.id}
             onClick={() => setFormData({ ...formData, plan: plan.id })}
-            className={`p-6 rounded-2xl border-2 cursor-pointer transition-all ${
+            className={`p-6 rounded-2xl border-2 cursor-pointer transition-all flex flex-col-reverse ${
               formData.plan === plan.id
                 ? 'border-purple-500 bg-purple-50 shadow-lg'
                 : 'border-gray-200 hover:border-purple-300'
