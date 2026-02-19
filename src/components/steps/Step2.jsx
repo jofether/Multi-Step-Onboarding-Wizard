@@ -9,8 +9,6 @@ const personalIcon = (
 export const Step2 = ({ formData, handleInputChange }) => {
   return (
     <div className="animate-fade-in space-y-6">
-      {/* [BUG - COLOR & CONTRAST] Description text is light gray on light background - invisible */}
-      {/* [FIX] Change text-gray-500 to text-gray-700 or text-gray-800 */}
       <StepHeader
         icon={personalIcon}
         title="Tell Us About You"

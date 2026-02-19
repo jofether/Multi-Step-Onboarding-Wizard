@@ -12,8 +12,6 @@ export const FormInput = ({
       <label className="block text-sm font-semibold text-gray-700 mb-2">
         {label}
       </label>
-      {/* [BUG - TYPO] Invalid Tailwind class: border-gray-20 doesn't exist (should be border-gray-200) */}
-      {/* [FIX] Change border-gray-20 to border-gray-200 */}
       <input
         type={type}
         name={name}
@@ -39,8 +37,6 @@ export const FormSelect = ({
       <label className="block text-sm font-semibold text-gray-700 mb-2">
         {label}
       </label>
-      {/* [BUG - TYPO] Invalid color: bg-red-5 doesn't exist (should be bg-red-50) */}
-      {/* [FIX] Change bg-red-5 to bg-red-50 */}
       <select
         name={name}
         value={value}
@@ -66,8 +62,6 @@ export const StepHeader = ({ icon, title, description }) => {
       </div>
       <div>
         <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
-        {/* [BUG - COLOR & CONTRAST] Text color gray-400 on gray background makes it invisible */}
-        {/* [FIX] Change text-gray-400 to text-gray-600 or text-gray-700 */}
         <p className="text-gray-400 mt-1">{description}</p>
       </div>
     </div>

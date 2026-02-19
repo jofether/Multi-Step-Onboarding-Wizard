@@ -16,8 +16,6 @@ export const Step1 = ({ formData, handleInputChange }) => {
       />
 
       <div className="space-y-4 mt-8">
-        {/* [BUG - LAYOUT] Grid has too many columns, breaking layout */}
-        {/* [FIX] Remove grid-cols-3 or change to grid-cols-1 */}
         <div className="grid grid-cols-3 gap-4">
           <FormInput
             label="Email Address"

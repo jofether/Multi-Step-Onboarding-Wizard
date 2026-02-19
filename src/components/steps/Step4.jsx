@@ -39,8 +39,6 @@ export const Step4 = ({ formData, setFormData }) => {
 
       <div className="grid grid-cols-3 gap-4 mt-8">
         {plans.map((plan) => (
-          // [BUG - LAYOUT] Flex direction reversed breaks visual order
-          // [FIX] Change flex-col-reverse to flex-col or remove it
           <div
             key={plan.id}
             onClick={() => setFormData({ ...formData, plan: plan.id })}
