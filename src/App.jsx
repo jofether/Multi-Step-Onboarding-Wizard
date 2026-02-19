@@ -114,6 +114,9 @@ function App() {
               Step <span className="text-purple-600">{step}</span> of <span className="text-purple-600">{totalSteps}</span>
             </div>
 
+
+            {/* [BUG - INTERACTION] pointer-events-none makes button unclickable */}
+            {/* [FIX] Remove pointer-events-none from className */}
             <button
               onClick={nextStep}
               className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
@@ -124,7 +127,9 @@ function App() {
         </div>
 
         {/* FOOTER INFO */}
-        <div className="mt-8 text-center text-gray-600 text-sm">
+        {/* [BUG - TYPO] Invalid text color: text-gray-60 doesn't exist (should be text-gray-600) */}
+        {/* [FIX] Change text-gray-60 to text-gray-600 */}
+        <div className="mt-8 text-center text-gray-60 text-sm">
           <p>Need help? <span className="text-blue-600 font-semibold cursor-pointer hover:underline">Contact Support</span></p>
         </div>
       </div>
