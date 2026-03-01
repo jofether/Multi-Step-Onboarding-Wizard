@@ -2,6 +2,7 @@
   "repository": "Multi-Step Onboarding Wizard",
   "bugs": [
     {
+      "comment": "Bug #1 - margin-bottom",
       "bug_category": "Spacing",
       "bug_type": "margin-bottom",
       "file_modified": "src/App.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className=\"text-center -mb-32\">",
       "css_selector": ".text-center",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 192,
+        "y": 16,
+        "width": 896,
+        "height": 156
       }
     },
     {
+      "comment": "Bug #2 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/App.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "<div className=\"bg-white rounded-3xl shadow-2xl overflow-hidden -z-10\">",
       "css_selector": ".rounded-3xl",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 192,
+        "y": 44,
+        "width": 896,
+        "height": 691
       }
     },
     {
+      "comment": "Bug #3 - border-color",
       "bug_category": "Typo",
       "bug_type": "border-color",
       "file_modified": "src/components/FormInput.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "className=\"w-full px-4 py-3 border-2 border-gray-20 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition\"",
       "css_selector": ".border-gray-20",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+            "x": 224,
+            "y": 318,
+            "width": 267,
+            "height": 51
+          }
     },
     {
+      "comment": "Bug #4 - background-color",
       "bug_category": "Color",
       "bug_type": "background-color",
       "file_modified": "src/components/FormInput.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "className=\"w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition bg-red-5\"",
       "css_selector": ".bg-red-5",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 224,
+        "y": 413,
+        "width": 832,
+        "height": 50
       }
     },
     {
+      "comment": "Bug #5 - text-color",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/FormInput.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "<p className=\"text-gray-400 mt-1\">{description}</p>",
       "css_selector": ".text-gray-400",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+            "x": 276,
+            "y": 242,
+            "width": 287,
+            "height": 24
+          }
     },
     {
+      "comment": "Bug #6 - position",
       "bug_category": "Layers",
       "bug_type": "position",
       "file_modified": "src/components/StepIndicator.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 absolute ${",
       "css_selector": ".absolute",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 269,
+        "y": 92,
+        "width": 48,
+        "height": 48
       }
     },
     {
+      "comment": "Bug #7 - grid",
       "bug_category": "Layout",
       "bug_type": "grid",
       "file_modified": "src/components/steps/Step1.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "<div className=\"grid grid-cols-3 gap-4\">",
       "css_selector": ".grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 224,
+        "y": 290,
+        "width": 832,
+        "height": 79
       }
     },
     {
+      "comment": "Bug #8 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/steps/Step4.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "className={`p-6 rounded-2xl border-2 cursor-pointer transition-all flex flex-col-reverse ${",
       "css_selector": ".flex-col-reverse",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      }
+            "x": 224,
+            "y": 207,
+            "width": 267,
+            "height": 251
+          }
     },
     {
+      "comment": "Bug #9 - padding",
       "bug_category": "Spacing",
       "bug_type": "padding",
       "file_modified": "src/components/steps/Step5.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "<div className=\"bg-green-50 border-2 border-green-200 rounded-xl -p-8\">",
       "css_selector": ".rounded-xl",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 224,
+        "y": 207,
+        "width": 832,
+        "height": 283
       }
     },
     {
+      "comment": "Bug #10 - text-color",
       "bug_category": "Typo",
       "bug_type": "text-color",
       "file_modified": "src/App.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "<div className=\"mt-8 text-center text-gray-60 text-sm\">",
       "css_selector": ".text-gray-60",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 192,
+        "y": 767,
+        "width": 896,
+        "height": 20
       }
     }
   ]
