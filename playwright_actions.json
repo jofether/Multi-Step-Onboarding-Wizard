@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "name": "bug-4-NavigateToStep3",
+      "selector": ["button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600"]
+    },
+    {
+      "name": "bug-8-NavigateToStep4",
+      "selector": ["button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600"]
+    },
+    {
+      "name": "bug-9-NavigateToStep5",
+      "selector": ["button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600", "button.from-blue-500.to-purple-600"]
+    }
+  ]
+}
