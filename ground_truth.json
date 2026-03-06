@@ -112,7 +112,7 @@
       "line_number": 19,
       "neg_code": "<div className=\"space-y-4 mt-8\">",
       "pos_code": "<div className=\"grid grid-cols-3 gap-4\">",
-      "css_selector": "div:has(input[name=\"firstName\"])",
+      "css_selector": "input[name=\"firstName\"]",
       "bounding_box": {
         "x": 224,
         "y": 290,
